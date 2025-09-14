@@ -4,9 +4,7 @@ const db = require("../config/db");
 const bcrypt = require("bcrypt");
 const authMiddleware = require("../middleware/authMiddleware");
 
-// ==========================
 // Fetch all stores
-// ==========================
 router.get("/stores/all", authMiddleware, async (req, res) => {
   try {
     const userId = req.user.id;
@@ -26,9 +24,7 @@ router.get("/stores/all", authMiddleware, async (req, res) => {
   }
 });
 
-// ==========================
 // Search stores
-// ==========================
 router.post("/stores/search", authMiddleware, async (req, res) => {
   try {
     const { name = "", address = "" } = req.body;
