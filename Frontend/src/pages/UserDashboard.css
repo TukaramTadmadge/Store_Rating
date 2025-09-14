@@ -1,0 +1,57 @@
+.dashboard-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.search-container input,
+.password-update input {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+.store-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.store-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.rating-buttons button {
+  background: #ecf0f1;
+  color: #2c3e50;
+}
+
+.rating-buttons .selected {
+  background: #f39c12;
+  color: white;
+}

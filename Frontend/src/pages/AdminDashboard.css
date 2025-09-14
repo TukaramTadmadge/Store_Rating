@@ -1,0 +1,99 @@
+/* Admin Dashboard Layout */
+.admin-dashboard {
+  display: flex;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  background: #f0f2f5;
+}
+
+/* Sidebar 30% */
+.sidebar {
+  width: 30%;
+  background: #1e1e2f;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar h2, .sidebar form h3 {
+  color: #ffcc00;
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+.sidebar button, .sidebar form button {
+  background: #27ae60;
+  border: none;
+  color: #fff;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.sidebar button:hover { background: #2ecc71; }
+.sidebar form button { background: #ff9f43; }
+.sidebar form button:hover { background: #ffb74d; }
+
+.sidebar form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  background: #2c2c3e;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.sidebar form.hidden { display: none; }
+.sidebar form input, .sidebar form select {
+  padding: 6px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  font-size: 0.9rem;
+}
+
+/* Main Content 70% */
+.main-content {
+  width: 70%;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.main-content h1 { color: #1e1e2f; margin-bottom: 15px; font-size: 1.5rem; }
+
+/* Stats */
+.stats { display: flex; gap: 10px; margin-bottom: 15px; }
+.stats p {
+  flex: 1; text-align: center; font-weight: bold; font-size: 0.9rem;
+  background: #fff; padding: 10px; border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+/* Filters */
+.filters { display: flex; gap: 6px; margin-bottom: 15px; }
+.filters input { flex: 1; padding: 6px; border-radius: 4px; border: 1px solid #ccc; font-size: 0.9rem; }
+.filters button { padding: 6px 10px; border-radius: 5px; border: none; background: #27ae60; color: #fff; font-weight: bold; cursor: pointer; transition: 0.3s; }
+.filters button:hover { background: #2ecc71; }
+
+/* Tables */
+table {
+  width: 100%; border-collapse: collapse; margin-bottom: 20px;
+  background: #fff; border-radius: 8px; overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+thead { background: #1e1e2f; color: #ffcc00; font-size: 0.9rem; }
+th, td { padding: 8px 10px; font-size: 0.85rem; text-align: left; }
+tr:nth-child(even) { background: #f9f9f9; }
+tr:hover { background: #f1f1f1; }
+
+/* Scrollbar */
+.main-content::-webkit-scrollbar { width: 6px; }
+.main-content::-webkit-scrollbar-track { background: #f0f2f5; }
+.main-content::-webkit-scrollbar-thumb { background: #888; border-radius: 10px; }
+.main-content::-webkit-scrollbar-thumb:hover { background: #555; }
